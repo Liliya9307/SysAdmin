@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # generate passwordless SSH
-runuser -u liliya93 -- ssh-keygen -q -t rsa -f /users/lngo/.ssh/id_rsa -N ''
+runuser -u liliya93 -- ssh-keygen -q -t rsa -f /users/liliya93/.ssh/id_rsa -N ''
 runuser -u liliya93 -- cat /users/liliya93/.ssh/id_rsa.pub >> /users/liliya93/.ssh/authorized_keys
 
 # setup NFS for key sharing
